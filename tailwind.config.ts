@@ -36,9 +36,12 @@ const config: Config = {
         foreground: "var(--foreground)",
         
       },
+      
       animation: {
         spotlight: "spotlight 2s ease .75s 1 forwards",
       },
+     
+
       keyframes: {
         spotlight: {
           "0%": {
@@ -49,6 +52,8 @@ const config: Config = {
             opacity: '1',
             transform: "translate(-50%,-40%) scale(1)",
           },
+          
+  
         
         },
       },

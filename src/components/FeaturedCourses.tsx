@@ -19,8 +19,8 @@ const FeaturedCourses = () => {
     <div className='py-12 bg-bg-gray-900'>
       <div>
         <div className='text-center'>
-        <h1 className='text-base text-teal-600 font-semibold tracking-wide uppercase'> Featured Courses </h1>
-        <p className='mt-2 text-3xl leading-8 font-semibold tracking-tight text-white sm:text-4xl'>learn with the best </p>
+        <h1 className='text-base text-teal-600 bg-gray-400 font-semibold tracking-wide uppercase'> Featured Courses </h1>
+        <p className='mt-2 text-3xl bg-black leading-8 font-semibold tracking-tight text-white sm:text-4xl'>learn with the best </p>
         </div>
       </div>
       <div className='mt-10'>
@@ -44,6 +44,7 @@ const FeaturedCourses = () => {
         hover:from-teal-600 hover:to-teal-800 transition duration-300 '>
         view all courses 
         </Link>
+        
       </div>
     </div>
   )

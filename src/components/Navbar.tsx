@@ -1,8 +1,13 @@
 "use client";
 import React, { useState } from "react";
 import {  Menu, MenuItem } from "./ui/navbar-menu";
+
 import { cn } from "@/lib/utils";
 import Link from "next/link";
+
+import { HoveredLink } from "./ui/navbar-menu";
+import Coursespage from "@/app/Courses/page";
+
 
 function Navbar({ className }: { className?: string }) {
 
@@ -13,15 +18,23 @@ function Navbar({ className }: { className?: string }) {
         <MenuItem setActive={setActive} active={active} item="Home">
         <Link href="/Home" onClick={() =>  setActive("Home")}>Home</Link>
         </MenuItem>
-        <MenuItem setActive={setActive} active={active} item="Our Courses">
-        <Link href="/Our Courses" onClick={() =>  setActive("Our Courses")}>Our Courses</Link>
+        <MenuItem setActive={setActive} active={active} item="Our Courses"
+        >
+          <div>
+          
+            <HoveredLink href="/courses">
+<Coursespage/>
+            </HoveredLink>
+            
+          </div>
+        <Link href="/  Our Courses" onClick={( )  =>  setActive("Our Courses")}> Courses </Link>
+        
         </MenuItem>
         <MenuItem setActive={setActive} active={active} item="Contact">
         <Link href="/Contact" onClick={() =>  setActive("Contact")}>Contact</Link>
         </MenuItem>
-        
-
     </Menu>
+  
     </div>
   )
 }
