@@ -9,6 +9,7 @@ import { HoveredLink } from "./ui/navbar-menu";
 import Coursespage from "@/app/Courses/page";
 
 
+
 function Navbar({ className }: { className?: string }) {
 
     const [active, setActive] = useState<string | null>(null);
